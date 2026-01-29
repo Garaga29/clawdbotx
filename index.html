@@ -4,10 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ClawdBotX</title>
-<link rel="stylesheet" href="style.css">
 
 <style>
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +26,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 80px 20px;
+  background: radial-gradient(circle, rgba(255,0,0,0.15), transparent 60%);
 }
 
 /* LOGO CENTER */
@@ -40,21 +39,31 @@ body {
 }
 
 .logo-main {
-  width: 200px;
+  width: 220px;
   max-width: 70%;
   height: auto;
   display: block;
+  filter: drop-shadow(0 0 30px red);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ANIMASI LOGO */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
 }
 
 /* TEXT */
 h1 {
-  font-size: 48px;
+  font-size: 52px;
   margin-top: 10px;
   color: #ff1a1a;
+  letter-spacing: 2px;
 }
 
 p {
-  margin-top: 10px;
+  margin-top: 12px;
   color: #ccc;
   font-size: 16px;
 }
@@ -62,19 +71,25 @@ p {
 /* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 28px;
-  background: #ff1a1a;
+  margin-top: 24px;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #ff1a1a, #ff4d4d);
   color: white;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 30px;
   font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px red;
 }
 
 /* RESPONSIVE HP */
 @media (max-width: 768px) {
   .logo-main {
-    width: 130px;
+    width: 140px;
   }
   h1 {
     font-size: 36px;
@@ -93,7 +108,7 @@ p {
     </div>
 
     <h1>CLAWDBOTX</h1>
-    <p>AI • Crypto • Automation</p>
+    <p>Simple • Elegant • AI Powered</p>
 
     <a href="https://x.com/clawdbotx" target="_blank" class="btn">
       Follow @clawdbotx
