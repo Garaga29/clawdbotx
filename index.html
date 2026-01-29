@@ -1,121 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ClawdBotX</title>
 
 <style>
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  background: black;
+  color: white;
   font-family: Arial, sans-serif;
 }
 
-body {
-  background: #000;
-  color: #fff;
-}
-
-/* HERO SECTION */
-.hero {
+/* CENTER LAYOUT */
+.container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 80px 20px;
-  background: radial-gradient(circle, rgba(255,0,0,0.15), transparent 60%);
 }
 
-/* LOGO CENTER */
-.logo-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.logo-main {
-  width: 220px;
-  max-width: 70%;
+/* LOGO */
+.logo {
+  width: 200px;
+  max-width: 60%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 0 30px red);
-  animation: float 3s ease-in-out infinite;
+  margin: 0 auto 20px auto;
+  filter: drop-shadow(0 0 25px red);
 }
 
-/* ANIMASI LOGO */
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0); }
+/* TITLE */
+h1 {
+  color: red;
+  font-size: 42px;
+  margin: 0;
 }
 
 /* TEXT */
-h1 {
-  font-size: 52px;
-  margin-top: 10px;
-  color: #ff1a1a;
-  letter-spacing: 2px;
-}
-
 p {
-  margin-top: 12px;
-  color: #ccc;
-  font-size: 16px;
+  color: #aaa;
+  margin-top: 8px;
 }
 
 /* BUTTON */
-.btn {
+a.btn {
   display: inline-block;
-  margin-top: 24px;
-  padding: 12px 30px;
-  background: linear-gradient(135deg, #ff1a1a, #ff4d4d);
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: red;
   color: white;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 20px;
   font-size: 14px;
-  transition: 0.3s;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px red;
-}
-
-/* RESPONSIVE HP */
-@media (max-width: 768px) {
-  .logo-main {
-    width: 140px;
+/* MOBILE */
+@media (max-width: 600px) {
+  .logo {
+    width: 130px;
   }
   h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 </style>
 </head>
 <body>
 
-<section class="hero">
-
+<div class="container">
   <div>
     <!-- LOGO CLAWDBOTX -->
-    <div class="logo-wrapper">
-      <img src="./clawdbotx.png" class="logo-main" alt="ClawdBotX Logo">
-    </div>
+    <img src="clawdbotx.png" class="logo" alt="ClawdBotX Logo">
 
     <h1>CLAWDBOTX</h1>
-    <p>Simple • Elegant • AI Powered</p>
+    <p>Simple • Elegant • AI</p>
 
-    <a href="https://x.com/clawdbotx" target="_blank" class="btn">
-      Follow @clawdbotx
-    </a>
+    <a href="https://x.com/clawdbotx" class="btn">Follow @clawdbotx</a>
   </div>
-
-</section>
+</div>
 
 </body>
 </html>
