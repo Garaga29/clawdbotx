@@ -1,15 +1,87 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
-<title>TEST CLAWDBOTX</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClawdBotX</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* CENTER */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* LOGO SVG */
+.logo svg {
+  width: 180px;
+  filter: drop-shadow(0 0 25px red);
+}
+
+/* TITLE */
+h1 {
+  color: red;
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+/* TEXT */
+p {
+  color: #aaa;
+}
+
+/* BUTTON */
+a.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .logo svg {
+    width: 120px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+}
+</style>
 </head>
-<body style="background:black;color:red;text-align:center;padding-top:100px;font-size:40px;">
+<body>
 
-<h1>🔥 CLAWDBOTX TEST OK 🔥</h1>
+<div class="container">
+  <div class="logo">
 
-<svg width="150" height="150">
-  <circle cx="75" cy="75" r="50" stroke="red" stroke-width="5" fill="none"/>
-</svg>
+    <!-- LOGO CLAWDBOTX (PASTI MUNCUL) -->
+    <svg viewBox="0 0 200 200">
+      <path d="M50 40 C20 80, 40 140, 90 150" stroke="red" stroke-width="8" fill="none"/>
+      <path d="M150 40 C180 80, 160 140, 110 150" stroke="red" stroke-width="8" fill="none"/>
+      <polygon points="100,60 115,90 100,120 85,90" fill="red"/>
+      <path d="M90 150 L70 180" stroke="red" stroke-width="6"/>
+      <path d="M110 150 L130 180" stroke="red" stroke-width="6"/>
+    </svg>
+
+    <h1>CLAWDBOTX</h1>
+    <p>AI • Crypto • Automation</p>
+
+    <a href="https://x.com/clawdbotx" class="btn">Follow @clawdbotx</a>
+  </div>
+</div>
 
 </body>
 </html>
