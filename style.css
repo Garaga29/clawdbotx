@@ -217,3 +217,33 @@ footer {
   50% { transform: translateY(-12px); }
   100% { transform: translateY(0); }
 }
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logo-main {
+  width: 200px;
+  max-width: 70%;
+  height: auto;
+  filter: drop-shadow(0 0 35px red);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+  .logo-main {
+    width: 140px;
+    max-width: 60%;
+  }
+}
+
+/* ANIMASI FLOAT */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
